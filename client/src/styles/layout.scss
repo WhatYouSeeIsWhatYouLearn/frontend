@@ -1,0 +1,39 @@
+
+
+
+.background {
+}
+
+.page{
+    padding-bottom: 60px;
+}
+// .skill-container:not(:first-child){
+//     margin-left: 20px;
+// }
+
+
+.col{
+    width: 100%;
+}
+
+.spaced-row{
+    margin-bottom:8px
+}
+
+.spaced-col{
+    margin-bottom:8px;
+}
+
+
+.equal-heights .ant-card, .equal-heights .ant-card-body, .equal-heights .ant-card-body > div{
+    height:100%;
+    width: 100%;
+    display:flex;
+    align-items: center;
+}
+
+.chartjs-render-monitor{
+    height: 100%;
+    width: 100%;
+    
+}

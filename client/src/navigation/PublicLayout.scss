@@ -1,0 +1,39 @@
+@import '../styles/theme.scss';
+@import './navbar/Navbar.scss';
+
+$sidebar-width:200px;
+
+.layout{
+    margin-top: $navbar-height;
+    height: calc(100vh - #{$navbar-height});
+    width: 100%;
+    display: flex;
+}
+
+.sidebar{
+    overflow: auto;
+    position: fixed !important;
+    height:calc(100vh - #{$navbar-height});
+    left: 0;
+    transition: 0.4s ;
+    z-index: 10;
+}
+
+.sidebar.open{
+    left: -$sidebar-width;
+}
+
+.layout-content{
+    margin-left: $sidebar-width;
+    transition: 0.4s  ;
+    position:absolute;
+    left: 0;
+    padding: 25px;
+    width: calc(100% - #{$sidebar-width});
+    overflow:auto;
+}
+
+.layout-content.open{
+    margin-left: 0;
+    width: 100%;
+}
